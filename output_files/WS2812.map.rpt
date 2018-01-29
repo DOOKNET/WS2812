@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WS2812
-Tue Jan 30 01:25:45 2018
+Tue Jan 30 01:48:33 2018
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 30 01:25:45 2018           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jan 30 01:48:33 2018           ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name                      ; WS2812                                          ;
 ; Top-level Entity Name              ; RZ_Code                                         ;
@@ -246,9 +246,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 34    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 34    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -260,8 +260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; boundary_port         ; 27                          ;
 ; cycloneiii_ff         ; 34                          ;
-;     CLR               ; 33                          ;
-;     ENA               ; 1                           ;
+;     CLR               ; 34                          ;
 ; cycloneiii_lcell_comb ; 49                          ;
 ;     arith             ; 31                          ;
 ;         2 data inputs ; 31                          ;
@@ -291,7 +290,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
-    Info: Processing started: Tue Jan 30 01:25:26 2018
+    Info: Processing started: Tue Jan 30 01:48:14 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WS2812 -c WS2812
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -331,9 +330,9 @@ Info (21057): Implemented 76 device resources after synthesis - the final resour
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 49 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 669 megabytes
-    Info: Processing ended: Tue Jan 30 01:25:45 2018
+    Info: Peak virtual memory: 661 megabytes
+    Info: Processing ended: Tue Jan 30 01:48:33 2018
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Total CPU time (on all processors): 00:00:43
 
 
