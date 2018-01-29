@@ -1,0 +1,3 @@
+# Auto detect text files and perform LF normalization
+* VHDL linguist-language=Verilog
+*.html linguist-language=Verilog

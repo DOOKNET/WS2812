@@ -1,0 +1,47 @@
+# Reading E:/Softwares/Quartues_16.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR ApplyCurrentColumnConfiguration config_name Default not found
+# Default Column Data
+# 	name AllColumns - name Status Type Order Modified
+# Column Data
+# 	name AllColumns - name Status Type Order Modified
+# do WS2812_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying E:/Softwares/Quartues_16.1/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:26:20 on Jan 30,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code" E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v 
+# -- Compiling module RZ_Code
+# 
+# Top level modules:
+# 	RZ_Code
+# End time: 01:26:20 on Jan 30,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_RZ
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_RZ 
+# Start time: 01:26:21 on Jan 30,2018
+# ** Error: (vsim-3170) Could not find 'tb_RZ'.
+#         Searched libraries:
+#             E:/Softwares/Quartues_16.1/modelsim_ase/altera/verilog/altera
+#             E:/Softwares/Quartues_16.1/modelsim_ase/altera/verilog/220model
+#             E:/Softwares/Quartues_16.1/modelsim_ase/altera/verilog/sgate
+#             E:/Softwares/Quartues_16.1/modelsim_ase/altera/verilog/altera_mf
+#             E:/Softwares/Quartues_16.1/modelsim_ase/altera/verilog/altera_lnsim
+#             E:/Softwares/Quartues_16.1/modelsim_ase/altera/verilog/cycloneive
+#             E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/simulation/modelsim/rtl_work
+#             E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./WS2812_run_msim_rtl_verilog.do PAUSED at line 11
+# End time: 01:28:04 on Jan 30,2018, Elapsed time: 0:01:43
+# Errors: 1, Warnings: 0

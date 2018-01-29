@@ -1,0 +1,31 @@
+`timescale	1ns/1ps
+
+module	tb_RZ();
+
+reg 	sclk;
+reg 	rst_n;
+reg 	[23:0]	RGB;
+wire 	RZ_Code;
+
+initial	sclk = 1;
+always	#10	sclk = ~sclk;
+
+initial	begin
+	rst_n = 0;
+	#100
+	rst_n = 1;
+	RGB = 23'b10111001_11100100_00001110;
+	#500
+	RGB = 23'b00001110_10111001_11100100;
+end
+
+RZ_Code			RZ_Code_inst(
+	.clk		(sclk),
+	.rst_n		(rst_n),
+	.RGB		(RGB),
+	.RZ_data	(RZ_Code)
+);
+
+
+
+endmodule

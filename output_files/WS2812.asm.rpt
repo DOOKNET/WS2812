@@ -1,0 +1,93 @@
+Assembler report for WS2812
+Tue Jan 30 01:25:55 2018
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/output_files/WS2812.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Tue Jan 30 01:25:55 2018 ;
+; Revision Name         ; WS2812                                ;
+; Top-level Entity Name ; RZ_Code                               ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE6F17C8                           ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++------------------------------------------------------------------------------+
+; Assembler Generated Files                                                    ;
++------------------------------------------------------------------------------+
+; File Name                                                                    ;
++------------------------------------------------------------------------------+
+; E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/output_files/WS2812.sof ;
++------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/output_files/WS2812.sof ;
++----------------+---------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                               ;
++----------------+---------------------------------------------------------------------------------------+
+; Device         ; EP4CE6F17C8                                                                           ;
+; JTAG usercode  ; 0x0008CAB0                                                                            ;
+; Checksum       ; 0x0008CAB0                                                                            ;
++----------------+---------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+    Info: Processing started: Tue Jan 30 01:25:54 2018
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off WS2812 -c WS2812
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 594 megabytes
+    Info: Processing ended: Tue Jan 30 01:25:55 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
