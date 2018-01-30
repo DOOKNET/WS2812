@@ -16,31 +16,31 @@
 # 
 # vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:40:05 on Jan 30,2018
+# Start time: 18:54:59 on Jan 30,2018
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code" E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v 
 # -- Compiling module RZ_Code
 # 
 # Top level modules:
 # 	RZ_Code
-# End time: 03:40:05 on Jan 30,2018, Elapsed time: 0:00:00
+# End time: 18:54:59 on Jan 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:40:05 on Jan 30,2018
+# Start time: 18:54:59 on Jan 30,2018
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach" E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v 
 # -- Compiling module tb_RZ
-# ** Warning: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v(20): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v(23): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v(21): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v(26): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
 # 	tb_RZ
-# End time: 03:40:05 on Jan 30,2018, Elapsed time: 0:00:00
+# End time: 18:54:59 on Jan 30,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 2
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_RZ
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_RZ 
-# Start time: 03:40:05 on Jan 30,2018
+# Start time: 18:55:00 on Jan 30,2018
 # Loading work.tb_RZ
 # Loading work.RZ_Code
 # Loading E:/Softwares/Quartues_16.1/modelsim_ase/win32aloem/convert_hex2ver.dll
@@ -54,6 +54,7 @@
 restart
 # Loading E:/Softwares/Quartues_16.1/modelsim_ase/win32aloem/convert_hex2ver.dll
 add wave -position insertpoint  \
+sim:/tb_RZ/RZ_Code_inst/symbol \
 sim:/tb_RZ/RZ_Code_inst/rst_n \
 sim:/tb_RZ/RZ_Code_inst/done_sig \
 sim:/tb_RZ/RZ_Code_inst/data_out \
@@ -64,5 +65,5 @@ sim:/tb_RZ/RZ_Code_inst/RGB_shift \
 sim:/tb_RZ/RZ_Code_inst/RGB_reg \
 sim:/tb_RZ/RZ_Code_inst/RGB
 run -all
-# End time: 03:43:41 on Jan 30,2018, Elapsed time: 0:03:36
+# End time: 19:16:31 on Jan 30,2018, Elapsed time: 0:21:31
 # Errors: 0, Warnings: 0
