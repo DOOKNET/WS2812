@@ -1,11 +1,13 @@
 `timescale	1ns/1ps
 
-module	tb_RZ();
+module	tb_uart();
 
 reg 	sclk;
 reg 	rst_n;
-wire 	RZ_data;
+wire 	tx_done_sig;
+wire 	tx;
 
+//---------------------------//
 initial	sclk = 1;
 always	#10	sclk = ~sclk;
 
@@ -14,13 +16,14 @@ initial	begin
 	#100
 	rst_n = 1;
 end
-
 //---------------------------//
-RGB_Control		RGB_Control_inst(
-	.clk		(sclk),
-	.rst_n		(rst_n),
-	.RZ_data	(RZ_data)	
+TOP					TOP_inst(
+	.clk			(sclk),
+	.rst_n			(rst_n),
+	.tx_done_sig	(tx_done_sig),
+	.tx				(tx)
 );
-//---------------------------//
+
+
 
 endmodule

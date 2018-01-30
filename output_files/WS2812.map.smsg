@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at tx_control.v(20): always construct contains both blocking and non-blocking assignments File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/tx_control.v Line: 20

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Jan 30 01:48:33 2018
+Analysis & Synthesis Status : Successful - Wed Jan 31 02:02:52 2018
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 Revision Name : WS2812
-Top-level Entity Name : RZ_Code
+Top-level Entity Name : RGB_Control
 Family : Cyclone IV E
-Total logic elements : 49
-    Total combinational functions : 49
-    Dedicated logic registers : 34
-Total registers : 34
-Total pins : 27
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 3
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

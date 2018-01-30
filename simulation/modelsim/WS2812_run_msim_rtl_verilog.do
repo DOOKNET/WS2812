@@ -6,6 +6,7 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v}
+vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v}
 
 vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v}
 

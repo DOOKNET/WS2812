@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WS2812
-Tue Jan 30 01:48:33 2018
+Wed Jan 31 02:02:52 2018
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -13,12 +13,10 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +43,16 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 30 01:48:33 2018           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jan 31 02:02:52 2018           ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name                      ; WS2812                                          ;
-; Top-level Entity Name              ; RZ_Code                                         ;
+; Top-level Entity Name              ; RGB_Control                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 49                                              ;
-;     Total combinational functions  ; 49                                              ;
-;     Dedicated logic registers      ; 34                                              ;
-; Total registers                    ; 34                                              ;
-; Total pins                         ; 27                                              ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 3                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -68,7 +66,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE6F17C8        ;                    ;
-; Top-level entity name                                                      ; RZ_Code            ; WS2812             ;
+; Top-level entity name                                                      ; RGB_Control        ; WS2812             ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,53 +155,52 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
-; Design/Code/RZ_Code.v            ; yes             ; User Verilog HDL File  ; E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; Design/Code/RZ_Code.v            ; yes             ; User Verilog HDL File  ; E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v     ;         ;
+; Design/Code/RGB_Control.v        ; yes             ; User Verilog HDL File  ; E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 49        ;
-;                                             ;           ;
-; Total combinational functions               ; 49        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 14        ;
-;     -- 3 input functions                    ; 2         ;
-;     -- <=2 input functions                  ; 33        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 18        ;
-;     -- arithmetic mode                      ; 31        ;
-;                                             ;           ;
-; Total registers                             ; 34        ;
-;     -- Dedicated logic registers            ; 34        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 27        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 34        ;
-; Total fan-out                               ; 257       ;
-; Average fan-out                             ; 1.88      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 3     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 3     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,31 +208,9 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |RZ_Code                   ; 49 (49)             ; 34 (34)                   ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |RZ_Code            ; RZ_Code     ; work         ;
+; |RGB_Control               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |RGB_Control        ; RGB_Control ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; RGB_reg[0..23]                         ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 24 ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                 ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                          ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
-; RGB_reg[0]    ; Stuck at GND              ; RGB_reg[1], RGB_reg[2], RGB_reg[3], RGB_reg[4], RGB_reg[5], RGB_reg[6], RGB_reg[7], RGB_reg[8], ;
-;               ; due to stuck port data_in ; RGB_reg[9], RGB_reg[10], RGB_reg[11], RGB_reg[12], RGB_reg[13], RGB_reg[14], RGB_reg[15],       ;
-;               ;                           ; RGB_reg[16], RGB_reg[17], RGB_reg[18], RGB_reg[19], RGB_reg[20], RGB_reg[21], RGB_reg[22],      ;
-;               ;                           ; RGB_reg[23]                                                                                     ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -243,10 +218,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 34    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -258,20 +233,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 27                          ;
-; cycloneiii_ff         ; 34                          ;
-;     CLR               ; 34                          ;
-; cycloneiii_lcell_comb ; 49                          ;
-;     arith             ; 31                          ;
-;         2 data inputs ; 31                          ;
-;     normal            ; 18                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 14                          ;
+; boundary_port         ; 3                           ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.44                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -290,49 +258,133 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
-    Info: Processing started: Tue Jan 30 01:48:14 2018
+    Info: Processing started: Wed Jan 31 02:02:33 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WS2812 -c WS2812
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file design/code/top.v
+    Info (12023): Found entity 1: TOP File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/TOP.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file design/code/rz_code.v
     Info (12023): Found entity 1: RZ_Code File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 6
-Info (12127): Elaborating entity "RZ_Code" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Info (12021): Found 1 design units, including 1 entities, in source file design/code/rgb_control.v
+    Info (12023): Found entity 1: RGB_Control File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 1
+Info (12127): Elaborating entity "RGB_Control" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at RGB_Control.v(26): truncated value with size 32 to match size of target (2) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 26
+Warning (10027): Verilog HDL or VHDL warning at the RGB_Control.v(27): index expression is not wide enough to address all of the elements in the array File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 27
+Info (10041): Inferred latch for "RGB_reg[0][0]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][1]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][2]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][3]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][4]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][5]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][6]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][7]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][8]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][9]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][10]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][11]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][12]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][13]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][14]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][15]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][16]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][17]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][18]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][19]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][20]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][21]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][22]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[0][23]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][0]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][1]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][2]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][3]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][4]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][5]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][6]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][7]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][8]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][9]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][10]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][11]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][12]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][13]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][14]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][15]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][16]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][17]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][18]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][19]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][20]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][21]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][22]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[1][23]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][0]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][1]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][2]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][3]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][4]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][5]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][6]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][7]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][8]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][9]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][10]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][11]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][12]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][13]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][14]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][15]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][16]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][17]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][18]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][19]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][20]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][21]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][22]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[2][23]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][0]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][1]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][2]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][3]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][4]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][5]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][6]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][7]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][8]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][9]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][10]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][11]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][12]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][13]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][14]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][15]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][16]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][17]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][18]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][19]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][20]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][21]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][22]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (10041): Inferred latch for "RGB_reg[3][23]" at RGB_Control.v(16) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 16
+Info (12128): Elaborating entity "RZ_Code" for hierarchy "RZ_Code:RZ_Code_inst" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 46
+Warning (10036): Verilog HDL or VHDL warning at RZ_Code.v(18): object "RZ_done" assigned a value but never read File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 18
+Warning (10230): Verilog HDL assignment warning at RZ_Code.v(50): truncated value with size 32 to match size of target (5) File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 50
+Warning (10030): Net "RZ_data" at RZ_Code.v(13) has no driver or initial value, using a default initial value '0' File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 13
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "RZ_data" is stuck at GND File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 5
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 24 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "RGB[0]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[1]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[2]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[3]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[4]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[5]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[6]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[7]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[8]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[9]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[10]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[11]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[12]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[13]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[14]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[15]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[16]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[17]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[18]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[19]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[20]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[21]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[22]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-    Warning (15610): No output dependent on input pin "RGB[23]" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v Line: 9
-Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 26 input pins
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 2
+    Warning (15610): No output dependent on input pin "rst_n" File: E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v Line: 3
+Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 49 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 661 megabytes
-    Info: Processing ended: Tue Jan 30 01:48:33 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 654 megabytes
+    Info: Processing ended: Wed Jan 31 02:02:52 2018
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Total CPU time (on all processors): 00:00:41
 
 
