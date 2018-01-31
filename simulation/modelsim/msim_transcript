@@ -16,39 +16,39 @@
 # 
 # vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:33:30 on Jan 31,2018
+# Start time: 20:52:08 on Jan 31,2018
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code" E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RZ_Code.v 
 # -- Compiling module RZ_Code
 # 
 # Top level modules:
 # 	RZ_Code
-# End time: 02:33:30 on Jan 31,2018, Elapsed time: 0:00:00
+# End time: 20:52:08 on Jan 31,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:33:30 on Jan 31,2018
+# Start time: 20:52:09 on Jan 31,2018
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code" E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/Design/Code/RGB_Control.v 
 # -- Compiling module RGB_Control
 # 
 # Top level modules:
 # 	RGB_Control
-# End time: 02:33:30 on Jan 31,2018, Elapsed time: 0:00:00
+# End time: 20:52:09 on Jan 31,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach {E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:33:31 on Jan 31,2018
+# Start time: 20:52:09 on Jan 31,2018
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach" E:/Workspace/Quartues_16.1/Learning/2017_12_5_WS2812/TestBeach/tb_RZ.v 
 # -- Compiling module tb_RZ
 # 
 # Top level modules:
 # 	tb_RZ
-# End time: 02:33:31 on Jan 31,2018, Elapsed time: 0:00:00
+# End time: 20:52:09 on Jan 31,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_RZ
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_RZ 
-# Start time: 02:33:31 on Jan 31,2018
+# Start time: 20:52:09 on Jan 31,2018
 # Loading work.tb_RZ
 # Loading work.RGB_Control
 # Loading work.RZ_Code
@@ -76,5 +76,5 @@ sim:/tb_RZ/RGB_Control_inst/RZ_Code_inst/RZ_data \
 sim:/tb_RZ/RGB_Control_inst/RZ_Code_inst/RGB_reg \
 sim:/tb_RZ/RGB_Control_inst/RZ_Code_inst/RGB
 run -all
-# End time: 02:43:37 on Jan 31,2018, Elapsed time: 0:10:06
+# End time: 20:57:15 on Jan 31,2018, Elapsed time: 0:05:06
 # Errors: 0, Warnings: 0

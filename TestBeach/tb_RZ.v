@@ -16,10 +16,10 @@ initial	begin
 end
 
 //---------------------------//
-RGB_Control		RGB_Control_inst(
+TOP				TOP_inst(
 	.clk		(sclk),
 	.rst_n		(rst_n),
-	.RZ_data	(RZ_data)	
+	.RZ_data	(RZ_data)
 );
 //---------------------------//
 
